@@ -1,5 +1,5 @@
 {
-  "name": "button-demo",
+  "name": "@marui01/button-demo",
   "version": "1.0.2",
   "description": "a button demo",
   "main": "index.js",
