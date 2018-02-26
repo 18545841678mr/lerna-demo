@@ -16,76 +16,81 @@
 15 silly getUpdates
 16 info Checking for updated packages...
 17 silly hasTags
-18 verbose hasTags false
-19 info Comparing with initial commit.
-20 verbose updated button-demo
-21 info Checking for prereleased packages...
-22 silly collectDependents
-23 silly isPackageDependentOf button-demo button-demo
-24 silly collectUpdates
-25 verbose has filtered update button-demo
-26 silly initialize success
-27 silly execute attempt
-28 silly runScriptSync preversion undefined
-29 silly runScriptSync preversion button-demo
-30 silly runScriptSync version button-demo
-31 silly runScriptSync version undefined
-32 silly addFile /Users/marui/lerna-demo/packages/button-demo/package.json
-33 silly commit Publish
-33 silly commit
-33 silly commit  - button-demo@1.0.1
-34 verbose commit [ 'commit',
-34 verbose commit   '--no-verify',
-34 verbose commit   '-F',
-34 verbose commit   '/private/var/folders/n8/599n26l92p5b7h_c7j10t0q80000gn/T/33d8d69e-50c0-443d-8fbf-7590b8715ffc/lerna-commit.txt' ]
-35 silly addTag button-demo@1.0.1
-36 silly runScriptSync postversion button-demo
-37 silly runScriptSync postversion undefined
-38 info publish Publishing packages to npm...
-39 silly existsSync /Users/marui/lerna-demo/packages/button-demo/scripts/prepublish.js
-40 verbose execScript No prepublish script found at /Users/marui/lerna-demo/packages/button-demo/scripts/prepublish.js
-41 verbose publishing button-demo
-42 silly publishTaggedInDir latest button-demo
-43 silly getExecOpts { cwd: '/Users/marui/lerna-demo/packages/button-demo' }
-44 error publish Retrying failed publish: button-demo
-45 verbose publish error undefined
-46 verbose publishing button-demo
-47 silly publishTaggedInDir latest button-demo
-48 silly getExecOpts { cwd: '/Users/marui/lerna-demo/packages/button-demo' }
-49 error publish Retrying failed publish: button-demo
-50 verbose publish error undefined
-51 verbose publishing button-demo
-52 silly publishTaggedInDir latest button-demo
-53 silly getExecOpts { cwd: '/Users/marui/lerna-demo/packages/button-demo' }
-54 error publish Retrying failed publish: button-demo
-55 verbose publish error undefined
-56 verbose publishing button-demo
-57 silly publishTaggedInDir latest button-demo
-58 silly getExecOpts { cwd: '/Users/marui/lerna-demo/packages/button-demo' }
-59 error publish Retrying failed publish: button-demo
-60 verbose publish error undefined
-61 verbose publishing button-demo
-62 silly publishTaggedInDir latest button-demo
-63 silly getExecOpts { cwd: '/Users/marui/lerna-demo/packages/button-demo' }
-64 error publish Ran out of retries while publishing button-demo Error: Command failed: npm publish --tag latest
-64 error publish npm ERR! publish Failed PUT 403
-64 error publish npm ERR! code E403
-64 error publish npm ERR! Package name too similar to existing packages; try renaming your package to '@marui01/button-demo' and publishing with 'npm publish --access=public' instead : button-demo
-64 error publish
-64 error publish npm ERR! A complete log of this run can be found in:
-64 error publish npm ERR!     /Users/marui/.npm/_logs/2018-02-22T02_39_06_059Z-debug.log
-64 error publish
-64 error publish     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-64 error publish     at <anonymous>
-64 error publish     at process._tickCallback (internal/process/next_tick.js:188:7)
-65 error execute callback with error
-66 error Error: Command failed: npm publish --tag latest
-66 error npm ERR! publish Failed PUT 403
-66 error npm ERR! code E403
-66 error npm ERR! Package name too similar to existing packages; try renaming your package to '@marui01/button-demo' and publishing with 'npm publish --access=public' instead : button-demo
-66 error
-66 error npm ERR! A complete log of this run can be found in:
-66 error npm ERR!     /Users/marui/.npm/_logs/2018-02-22T02_39_06_059Z-debug.log
-66 error
-66 error     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-66 error     at <anonymous>
+18 verbose hasTags true
+19 silly getLastTag
+20 verbose getLastTag button-demo@1.0.2
+21 info Comparing with button-demo@1.0.2.
+22 silly diffSinceIn button-demo@1.0.2 packages/button-demo
+23 silly diff packages/button-demo/package.json
+23 silly diff packages/button-demo/src/button.vue
+24 verbose updated @marui01/button-demo
+25 info Checking for prereleased packages...
+26 silly collectDependents
+27 silly isPackageDependentOf @marui01/button-demo @marui01/button-demo
+28 silly collectUpdates
+29 verbose has filtered update @marui01/button-demo
+30 silly initialize success
+31 silly execute attempt
+32 silly runScriptSync preversion undefined
+33 silly runScriptSync preversion @marui01/button-demo
+34 silly runScriptSync version @marui01/button-demo
+35 silly runScriptSync version undefined
+36 silly addFile /Users/marui/lerna-demo/packages/button-demo/package.json
+37 silly commit Publish
+37 silly commit
+37 silly commit  - @marui01/button-demo@1.0.3
+38 verbose commit [ 'commit',
+38 verbose commit   '--no-verify',
+38 verbose commit   '-F',
+38 verbose commit   '/private/var/folders/n8/599n26l92p5b7h_c7j10t0q80000gn/T/3a3143e6-c79e-4b87-91d5-2bbb763b8ee4/lerna-commit.txt' ]
+39 silly addTag @marui01/button-demo@1.0.3
+40 silly runScriptSync postversion @marui01/button-demo
+41 silly runScriptSync postversion undefined
+42 info publish Publishing packages to npm...
+43 silly existsSync /Users/marui/lerna-demo/packages/button-demo/scripts/prepublish.js
+44 verbose execScript No prepublish script found at /Users/marui/lerna-demo/packages/button-demo/scripts/prepublish.js
+45 verbose publishing @marui01/button-demo
+46 silly publishTaggedInDir latest button-demo
+47 silly getExecOpts { cwd: '/Users/marui/lerna-demo/packages/button-demo' }
+48 error publish Retrying failed publish: @marui01/button-demo
+49 verbose publish error undefined
+50 verbose publishing @marui01/button-demo
+51 silly publishTaggedInDir latest button-demo
+52 silly getExecOpts { cwd: '/Users/marui/lerna-demo/packages/button-demo' }
+53 error publish Retrying failed publish: @marui01/button-demo
+54 verbose publish error undefined
+55 verbose publishing @marui01/button-demo
+56 silly publishTaggedInDir latest button-demo
+57 silly getExecOpts { cwd: '/Users/marui/lerna-demo/packages/button-demo' }
+58 error publish Retrying failed publish: @marui01/button-demo
+59 verbose publish error undefined
+60 verbose publishing @marui01/button-demo
+61 silly publishTaggedInDir latest button-demo
+62 silly getExecOpts { cwd: '/Users/marui/lerna-demo/packages/button-demo' }
+63 error publish Retrying failed publish: @marui01/button-demo
+64 verbose publish error undefined
+65 verbose publishing @marui01/button-demo
+66 silly publishTaggedInDir latest button-demo
+67 silly getExecOpts { cwd: '/Users/marui/lerna-demo/packages/button-demo' }
+68 error publish Ran out of retries while publishing @marui01/button-demo Error: Command failed: npm publish --tag latest
+68 error publish npm ERR! publish Failed PUT 403
+68 error publish npm ERR! code E403
+68 error publish npm ERR! you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : @marui01/button-demo
+68 error publish
+68 error publish npm ERR! A complete log of this run can be found in:
+68 error publish npm ERR!     /Users/marui/.npm/_logs/2018-02-22T02_56_48_196Z-debug.log
+68 error publish
+68 error publish     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+68 error publish     at <anonymous>
+68 error publish     at process._tickCallback (internal/process/next_tick.js:188:7)
+69 error execute callback with error
+70 error Error: Command failed: npm publish --tag latest
+70 error npm ERR! publish Failed PUT 403
+70 error npm ERR! code E403
+70 error npm ERR! you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : @marui01/button-demo
+70 error
+70 error npm ERR! A complete log of this run can be found in:
+70 error npm ERR!     /Users/marui/.npm/_logs/2018-02-22T02_56_48_196Z-debug.log
+70 error
+70 error     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+70 error     at <anonymous>
