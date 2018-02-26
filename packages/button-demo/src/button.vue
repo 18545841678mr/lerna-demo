@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <div class="button">{{btnText}}</div>
+        <div class="button">click{{btnText}}</div>
     </div>
 </template>
 
